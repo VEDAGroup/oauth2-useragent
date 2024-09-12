@@ -32,22 +32,11 @@
   </developers>
 
   <scm>
-    <connection>scm:git:https://github.com/Microsoft/oauth2-useragent.git</connection>
-    <developerConnection>scm:git:https://github.com/Microsoft/oauth2-useragent.git</developerConnection>
-    <url>https://github.com/Microsoft/oauth2-useragent</url>
+    <connection>scm:git:https://github.com/VEDAGroup/oauth2-useragent.git</connection>
+    <developerConnection>scm:git:https://github.com/VEDAGroup/oauth2-useragent.git</developerConnection>
+    <url>https://github.com/VEDAGroup/oauth2-useragent</url>
     <tag>HEAD</tag>
   </scm>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
