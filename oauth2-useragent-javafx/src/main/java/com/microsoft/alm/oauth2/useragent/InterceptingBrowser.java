@@ -21,7 +21,7 @@ class InterceptingBrowser extends Region implements ChangeListener<String> {
 
     private final Lock lock = new ReentrantLock();
     private final Condition responseReceived = lock.newCondition();
-    private final WebView webView = new WebView();
+    /* default */ final WebView webView = new WebView();
     private final WebEngine webEngine = webView.getEngine();
 
     private String destinationUriString;

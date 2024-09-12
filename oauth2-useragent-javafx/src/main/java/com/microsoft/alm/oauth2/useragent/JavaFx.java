@@ -59,6 +59,8 @@ public class JavaFx extends Application implements UserAgent, Runnable, Runnable
         addressBar.setEditable(false);
 
         interceptingBrowser = new InterceptingBrowser();
+        interceptingBrowser.webView.prefHeightProperty().bind(primaryStage.heightProperty());
+        interceptingBrowser.webView.prefWidthProperty().bind(primaryStage.widthProperty());
         final WebEngine webEngine = interceptingBrowser.getWebEngine();
         webEngine.locationProperty().addListener(new ChangeListener<String>() {
             public void changed(final ObservableValue<? extends String> observable, final String oldValue, final String newValue) {
@@ -70,7 +72,7 @@ public class JavaFx extends Application implements UserAgent, Runnable, Runnable
         vBox.getChildren().setAll(addressBar, interceptingBrowser);
         VBox.setVgrow(interceptingBrowser, Priority.ALWAYS);
 
-        final Scene scene = new Scene(vBox);
+        final Scene scene = new Scene(vBox, 1024, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
 
