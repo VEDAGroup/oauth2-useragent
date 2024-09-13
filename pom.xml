@@ -8,7 +8,7 @@
 
   <groupId>com.microsoft.alm</groupId>
   <artifactId>oauth2-useragent-parent</artifactId>
-  <version>0.11.4-VEDA-SNAPSHOT</version>
+  <version>0.11.5-VEDA-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Parent for Microsoft OAuth 2.0 User Agent library for Java</name>
@@ -202,19 +202,19 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>ossrh</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-          <!-- The only artifacts we need are from the aggregator project, oauth2-useragent,
-           and the parent POM, so enable deployment here -->
-          <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>
-        </configuration>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.sonatype.plugins</groupId>-->
+<!--        <artifactId>nexus-staging-maven-plugin</artifactId>-->
+<!--        <extensions>true</extensions>-->
+<!--        <configuration>-->
+<!--          <serverId>ossrh</serverId>-->
+<!--          <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
+<!--          <autoReleaseAfterClose>true</autoReleaseAfterClose>-->
+<!--          &lt;!&ndash; The only artifacts we need are from the aggregator project, oauth2-useragent,-->
+<!--           and the parent POM, so enable deployment here &ndash;&gt;-->
+<!--          <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
