@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.microsoft.alm</groupId>
     <artifactId>oauth2-useragent-parent</artifactId>
-    <version>0.11.5-VEDA</version>
+    <version>0.11.6-VEDA-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>oauth2-useragent-javafx</artifactId>
